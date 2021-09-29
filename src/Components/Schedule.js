@@ -1,6 +1,6 @@
 import React from 'react';
-import timelineData from './Data/timeline';
-import './Schedule.css';
+import timelineData from '../Data/timeline';
+import '../styles/Schedule.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

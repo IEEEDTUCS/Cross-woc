@@ -2,7 +2,7 @@ import React from 'react';
 import Intro from './Intro';
 import Sponsor from './Sponsor';
 import Project from './Project';
-import './Home.css'
+import '../styles/Home.css'
 
 function Home() {
     return (
