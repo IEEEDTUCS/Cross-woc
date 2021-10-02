@@ -1,19 +1,13 @@
 import React from 'react';
-
+import TeamCard from './teamCard';
+import bootstrap from "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 function Team() {
     return (
-        <div>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-
+        <div className="team">
+            <TeamCard/>
         </div>
+        
+        
     )
 }
 
