@@ -1,21 +1,14 @@
 import React from 'react';
 import '../styles/Team.css'
+import TeamCard from './teamCard';
 
 function Team() {
     return (
-        <div>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-            <h1>Team</h1>
-
-        </div>
+        <div className="team">
+            <TeamCard/>
+        </div>    
+        
     )
 }
 
-export default Team
+export default Team;
