@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    overflow-x: hidden;
+    margin-bottom: 100vh;
+    font-size: 56%;
+}
+.fas
+{
+    color: white;
+}
+header
+{
+    background-color: black;
+    display: flex;
+    overflow-x: hidden;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1.2rem 4rem;
+    width: 100%;
+    z-index: 3;
+    border-bottom: 2px solid white;
+    position: fixed;
+    box-sizing: border-box;
+}
+header .Logo
+{
+    display: inline-flex;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+header .Logo:hover
+{
+    letter-spacing: 2px;
+    color: skyblue;
+    text-shadow: 0 0 10px #09dff5, 0 0 40px #09dff5, 0 0 80px #09dff5;
+}
+header .navbar ul 
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+header .navbar ul li a
+{
+    position: relative;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    margin: 0 0.3rem;
+    padding: 0 0.2rem; 
+}
+header .navbar ul li a:hover
+{
+    color: #175285;
+    background: #09dff5;
+    box-shadow: 0 0 10px #09dff5, 0 0 40px #09dff5, 0 0 80px #09dff5;
+    transition-delay: 0.25s;
+}
+header .navbar ul li a:before
+{
+    position: absolute;
+    content: ' ';
+    left: 0;
+    top: 0;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    /* filter: blur(1px); */
+}
+header .navbar ul li a:after
+{
+    position: absolute;
+    content: ' ';
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    /* filter: blur(1px); */
+
+}
+
+
+header .navbar ul li a:hover:before
+{
+    border-top-color: #09dff5;
+    height: 100%;
+    width: 100%;
+    border-right-color: #09dff5;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+header .navbar ul li a:hover:after
+{
+    border-left-color: #09dff5;
+    height: 100%;
+    width: 100%;
+    border-bottom-color: #09dff5;
+    /* transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; */
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+
+}
+.main-menu
+{
+    /* position: relative; */
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.main-menu video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.main-menu h2
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    /* padding: 0 20px; */
+    font-size: 7rem;
+    color: rgb(229, 226, 226);
+    z-index: 1;
+    text-shadow: 0 0 10px #09dff5, 0 0 40px #09dff5, 0 0 80px #09dff5;
+}
+
+.mask
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+    filter: invert(0);
+    mix-blend-mode: multiply;
+}
+.main-menu .follow
+{
+    position: relative;
+    font-size: 2rem;
+    z-index: 1;
+    padding-top: 250px;
+    left: 8%;
+    justify-content: space-between;
+    align-content: center;
+}
+.main-menu .follow img
+{
+    cursor: pointer;
+}
+.main-menu .follow img:hover
+{
+    box-shadow: 0 1px 10px 0 white, 0 7px 20px 0 white;
+}
+
+
+.menu-toggle
+{
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 800px)
+{
+    /* .menu-toggle
+    {
+        display: block;
+    } */
+    /* header
+    {
+        padding: 0 20px;
+    } */
+    header .Logo
+    {
+        font-size: 1rem;
+    }
+    header .navbar
+    {
+        display: none;
+        /* position: absolute;
+        width: 100%;
+        min-height: 1000vh;
+        background: #333;
+        top: 50px;
+        left: 0;
+        transition: 0.5s;
+        z-index: 1000; */
+    }
+    header .navbar ul
+    {
+        display: block;
+    }
+    .main-menu video
+    {
+        width: 110%;
+    }
+    .main-menu h2
+    {
+        font-size: 3rem;
+        margin-left: 1rem;
+        text-align: center;
+    }
+    .mask
+    {
+        margin-left: 1.7rem;
+    }
+    .main-menu .follow
+    {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+
