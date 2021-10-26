@@ -10,8 +10,8 @@ function Home() {
         <div class='Home'>
             <Landing />            
             <Intro />
-            <Sponsor />
             <Project />
+            <Sponsor />
         </div>
     )
 }

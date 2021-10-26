@@ -5,13 +5,13 @@ import '../styles/Navigation.css'
 function Navigation() {
     return (
       <>
-          <Navbar  collpseOnSelect fixed='top' expand='sm' variant='light'>
+          <Navbar className='nav-container' collpseOnSelect fixed='top' expand='sm' variant='dark'>
                 <Container>
-                    <Navbar.Brand href="/">CrossWoc</Navbar.Brand>
+                    <Navbar.Brand className='logo' href="/">CrossWoc</Navbar.Brand>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
-                        <Nav>
-                            <Nav.Link href='/into'>ABOUT</Nav.Link>
+                        <Nav className='navbar'>
+                            <Nav.Link href='/about'>ABOUT</Nav.Link>
                             <Nav.Link href='/schedule'>SCHEDULE</Nav.Link>
                             <Nav.Link href='/project'>PROJECTS</Nav.Link>
                             <Nav.Link href='/leaderboard'>LEADERBOARD</Nav.Link>                        

@@ -1,0 +1,80 @@
+.nav-container{
+    background: #000000;
+    z-index: 2000;
+    font-size: 1.2rem;
+}
+
+.logo{
+    display: inline-flex;
+    color: white;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+.logo:hover{
+    letter-spacing: 2px;
+    color: skyblue;
+    text-shadow: 0 0 10px #09dff5, 0 0 40px #09dff5, 0 0 80px #09dff5;
+}
+
+.navbar > a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    margin: 0 0.3rem;
+    padding: 0 0.2rem;
+}
+
+.navbar > a:hover{
+    color: #175285;
+    background: #09dff5;
+    box-shadow: 0 0 10px #09dff5, 0 0 40px #09dff5, 0 0 80px #09dff5;
+    transition-delay: 0.25s;
+
+}
+
+.navbar > a:before{
+    position: absolute;
+    content: ' ';
+    left: 0;
+    top: 0;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+.navbar > a:after{
+    position: absolute;
+    content: ' ';
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar > a:hover:before{
+    border-top-color: #09dff5;
+    height: 100%;
+    width: 100%;
+    border-right-color: #09dff5;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+
+.navbar > a:hover:after{
+    border-left-color: #09dff5;
+    height: 100%;
+    width: 100%;
+    border-bottom-color: #09dff5;
+    /* transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; */
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
