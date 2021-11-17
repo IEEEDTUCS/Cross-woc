@@ -4,13 +4,66 @@ import landvid from '../img/Home/BackgroundVid.mp4'
 import mask from '../img/Home/mask.jpg'
 import devfolio from "../img/Home/Devfolio.jpeg"
 import discord from "../img/Home/Discord.jpeg"
+import winter from '../img/winter.jpg';
 
 
 const Landing = () => {
     return (
         <div>
             <section className="main-menu">
-                <video className="vid2" src={landvid} autoPlay loop muted type="mp4"></video>
+
+            <div class="snowflakes" aria-hidden="true">
+             
+
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❆
+                </div>
+                <div class="snowflake">
+                ❄
+                </div>
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❆
+                </div>
+                <div class="snowflake">
+                ❄
+                </div>
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❆
+                </div>
+                <div class="snowflake">
+                ❄
+                </div>
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❆
+                </div>
+                <div class="snowflake">
+                ❄
+                </div><div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❆
+                </div>
+                <div class="snowflake">
+                ❄
+                </div>
+            </div>
+
                 <img src={mask} className="mask" alt="backmask" />
                 <h2 data-text="[CrossWoc]">[CrossWoc]</h2>
                 <div className="follow">
