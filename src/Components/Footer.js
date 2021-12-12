@@ -14,10 +14,7 @@ function Footer() {
 
     return (
         <div className='Footer text-center' id='contact'>
-            <h1>Contact</h1>
-
-            {/* CrossWoc Logo */}
-            <img className="image" src={logo} alt="Cross-Woc" height="100px"/>
+            
             
             {/* Contact Us Heading */}
             <h1 className="footer-heading">Contact Us</h1>  

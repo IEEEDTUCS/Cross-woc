@@ -44,8 +44,8 @@ body
 .main-menu
 {
     /* position: relative; */
-    background: #09dff5;
-
+    background: url('../img/winter.jpg');
+    background-size: cover;
     width: auto;
     height: 100vh;
     display: flex;
